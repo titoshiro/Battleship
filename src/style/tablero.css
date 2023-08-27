@@ -1,0 +1,35 @@
+.app {
+  text-align: center;
+}
+
+.game-container {/* contenedor del tablero */
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 2px;
+  border: 2px solid #333;
+  background-color: #ddd;
+}
+
+.cell { /* celda en el tablero de juego*/
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold; 
+}
+
+.ship {
+   background-color: #6baed6; /* partes de un barco */
+}
+
+.sunk {
+  background-color: #d95f02;/* partes de un barco hundido*/
+}
+
+.missed {
+  background-color: #e7298a; /* disparos fallados*/
+}

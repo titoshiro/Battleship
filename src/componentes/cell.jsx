@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 const Cell = ({ value, onClick }) => {
-  const cellClass = value === 1 ? 'ship' : value === 2 ? 'sunk-ship' : value === 3 ? 'missed-shot' : '';
+  const cellClass = value === 1 ? 'ship' : '';
 
   return <div className={`cell ${cellClass}`} onClick={onClick}></div>;
 };

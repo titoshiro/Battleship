@@ -1,0 +1,28 @@
+
+.game-container {/* contenedor del tablero */
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.cell { /* celda en el tablero de juego*/
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdcdc;
+  
+}
+
+.ship {
+  background-color: blue;
+}

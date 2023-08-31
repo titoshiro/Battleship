@@ -1,15 +1,23 @@
-
 import PropTypes from 'prop-types';
 
-const Cell = ({ value, onClick }) => {
-  const cellClass = value === 1 ? 'ship' : '';
 
-  return <div className={`cell ${cellClass}`} onClick={onClick}></div>;
+const Cell = ({ onClick, isShip }) => {
+  return (
+    <div
+      className={`cell ${isShip ? 'ship' : ''}`}
+      onClick={onClick}
+      style={{
+        backgroundColor: isShip ? 'blue' : '#dcdcdc',
+        color: isShip ? '#ffffff' : '#000000',
+      }}
+    >
+      
+    </div>
+  );
 };
-
 Cell.propTypes = {
-  value: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired,
+  isShip: PropTypes.bool.isRequired,
 };
 
 export default Cell;

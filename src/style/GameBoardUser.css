@@ -1,5 +1,5 @@
-
-.game-container {/* contenedor del tablero */
+.game-container {
+  /* Contenedor del tablero del usuario */
   width: 400px;
   height: 400px;
   display: grid;
@@ -8,21 +8,23 @@
   margin-left: 80px;
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 
-.cell { /* celda en el tablero de juego*/
+.game-container .cell {
+  /* Celda en el tablero del usuario */
   width: 40px;
   height: 40px;
   border: 1px solid #000000;
-border-radius: 4px;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #dcdcdc;
-  
 }
 
-.ship {
-  background-color: blue;
+
+
+.game-container .player-shot {
+  /* Cambia el color de las celdas con disparos del jugador en el tablero del usuario */
+  background-color: aquamarine; /* Cambia el color que desees */
 }

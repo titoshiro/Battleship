@@ -289,14 +289,15 @@ function App() {
         Generar Barcos de la Computadora
       </button>
       <GameBoardComputer
-        gameBoard={computerGameBoard}
-        isPlayerTurn={isPlayerTurn}
-        playerShots={playerShots}
-        computerShots={computerShots}
-        handlePlayerShot={handlePlayerShot}
-        handleComputerShot={handleComputerShot}
-        gameOver={gameOver}
-      />
+  gameBoard={computerGameBoard}
+  isPlayerTurn={isPlayerTurn}
+  playerShots={playerShots}
+  computerShots={computerShots} // Asegúrate de incluir esta propiedad
+  handlePlayerShot={handlePlayerShot}
+  handleComputerShot={handleComputerShot}
+  gameOver={gameOver}
+  className="computer"
+/>
       {gameOver && (
         <div className="game-over-message">
           {isPlayerTurn ? "¡Ganaste!" : "La computadora ganó."}

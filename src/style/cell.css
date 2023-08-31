@@ -1,0 +1,22 @@
+.cell {
+  /* Estilos para la celda en general */
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdcdc;
+}
+
+.ship {
+  /* Estilos para la celda con un barco */
+  background-color: blue;
+}
+
+.sunk {
+  /* Estilos para la celda con un barco hundido */
+  background-color: rgb(212, 60, 60);
+  color: #fefefe;
+}

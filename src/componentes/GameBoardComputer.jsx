@@ -14,10 +14,8 @@ function GameBoardComputer({
   const handleCellClick = (rowIndex, columnIndex) => {
     if (isPlayerTurn && !gameOver) {
       handlePlayerShot(rowIndex, columnIndex);
-    
     }
   };
-
   useEffect(() => {
     if (!isPlayerTurn && !gameOver) {
       handleComputerShot();
@@ -27,14 +25,14 @@ function GameBoardComputer({
   }, [isPlayerTurn, gameOver, handleComputerShot]);
 
   return (
-    <div className="game-container">
+    <div className="game-container-computer">
       {gameBoard.map((row, rowIndex) => (
         <div key={rowIndex} className="row">
           {row.map((cellValue, columnIndex) => {
             const cellId = `${rowIndex}-${columnIndex}`;
             const isPlayerShot = playerShots.includes(cellId);
             const isComputerShot = computerShots.includes(cellId);
-
+  
             return (
               <div
                 key={columnIndex}

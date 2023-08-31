@@ -1,25 +1,43 @@
-/* GameBoardComputer.css */
+.game-container-computer {
+  /* Contenedor del tablero de la computadora */
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-/* Estilos para cuando una celda fue disparada por el jugador */
-.player-shot {
-  background-color: rgb(90, 90, 90); /* Cambia el color de fondo cuando el jugador dispara */
+.game-container-computer .cell {
+  /* Celda en el tablero de la computadora */
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdcdc;
+}
+
+.game-container-computer .ship {
+  /* Cambia el color de los barcos en el tablero de la computadora */
+  background-color: purple; /* Cambia el color que desees */
+}
+
+.game-container-computer .sunk {
+  /* Cambia el color de las celdas con barcos hundidos en el tablero de la computadora */
+  background-color: rgb(212, 60, 60); /* Cambia el color que desees */
   color: #fefefe;
 }
 
-/* Estilos para celdas que representan barcos */
-.computer-ship {
-  background-color: blue; /* Cambia el color de fondo para las celdas que tienen barcos */
-  color: #fefefe;
+.game-container-computer .player-shot {
+  /* Cambia el color de las celdas con disparos del jugador en el tablero de la computadora */
+  background-color: aquamarine; /* Cambia el color que desees */
 }
 
-/* Estilos para celdas que representan barcos hundidos */
-.sunk {
-  background-color: rgb(212, 60, 60); /* Cambia el color de fondo para las celdas con barcos hundidos */
-  color: #fefefe;
-}
-
-.game-over-message{
-  font-size: 40px;
-  text-align: center;
-
+.game-container-computer .cell.computer-shot {
+  background-color: yellow; /* Cambia el color que desees */
 }

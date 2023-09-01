@@ -1,3 +1,5 @@
+/* gameboardcomputer */
+
 .game-container-computer {
   /* Contenedor del tablero de la computadora */
   width: 400px;
@@ -5,39 +7,34 @@
   display: grid;
   grid-template-columns: repeat(10, 40px);
   grid-template-rows: repeat(10, 40px);
-  margin-left: 80px;
+  justify-content: center; /* Centrar horizontalmente */
+  margin-left: auto; /* Ajustar margen izquierdo */
+  margin-right: auto; /* Ajustar margen derecho */
   margin-top: 30px;
-  margin-bottom: 30px;
 }
-
 .game-container-computer .cell {
   /* Celda en el tablero de la computadora */
   width: 40px;
   height: 40px;
-  border: 1px solid #000000;
+  border: 1px solid #020031;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dcdcdc;
+  background-color: #030e9f;
 }
 
 .game-container-computer .ship {
   /* Cambia el color de los barcos en el tablero de la computadora */
-  background-color: purple; /* Cambia el color que desees */
-}
-
-.game-container-computer .sunk {
-  /* Cambia el color de las celdas con barcos hundidos en el tablero de la computadora */
-  background-color: rgb(212, 60, 60); /* Cambia el color que desees */
-  color: #fefefe;
+  background-color: #030e9f; /* Cambia el color que desees */
 }
 
 .game-container-computer .player-shot {
   /* Cambia el color de las celdas con disparos del jugador en el tablero de la computadora */
-  background-color: aquamarine; /* Cambia el color que desees */
+  background-color: rgb(209, 26, 26); /* Cambia el color que desees */
 }
 
-.game-container-computer .cell.computer-shot {
-  background-color: yellow; /* Cambia el color que desees */
+.game-container-computer .cell.miss {
+  /* Cambia el color de las celdas con disparos fallidos en el tablero de la computadora */
+  background-color: rgb(29, 27, 27); /* Cambia el color que desees */
 }

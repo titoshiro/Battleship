@@ -1,8 +1,28 @@
-# React + Vite
+Battleship con React
+¡Bienvenido a Battleship con React!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instrucciones
+Para jugar a este emocionante juego de Batalla Naval, sigue los siguientes pasos:
 
-Currently, two official plugins are available:
+1. Instalación
+En tu terminal, ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+"npm install"
+
+2. Ejecución
+Una vez que las dependencias estén instaladas, ejecuta el siguiente comando para iniciar el juego:
+
+"npm run dev"
+
+Esto abrirá el juego en tu navegador web, en el localhost.
+
+3. Jugar
+
+Dentro del juego, encontrarás las siguientes instrucciones:
+
+Elige la horientacion de tu barco
+Coloca tus barcos en tu tablero dando clic al barco y luego a tu tablero
+Una vez que estés listo, haz clic en "Comenzar Juego".
+Tu objetivo es hundir todos los barcos de la computadora antes de que ella hunda los tuyos.
+Los disparos se alternarán entre tú y la computadora. Haz clic en las celdas del tablero de la computadora para disparar.
+¡Que tengas un juego emocionante y mucha suerte! ¡Disfruta del juego de Batalla Naval!

@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types';
 
-
-const Cell = ({ onClick, isShip }) => {
+const Cell = ({ onClick, isShip, isComputerShot, isPlayerShot, isSunk }) => {
   return (
     <div
-      className={`cell ${isShip ? 'ship' : ''}`}
+      className={`cell ${isShip ? 'ship' : ''} ${
+        isComputerShot ? 'computer-shot' : ''
+      } ${isPlayerShot ? 'player-shot' : ''} ${isSunk ? 'sunk' : ''}`}
       onClick={onClick}
-      style={{
-        backgroundColor: isShip ? 'blue' : '#dcdcdc',
-        color: isShip ? '#ffffff' : '#000000',
-      }}
     >
       
     </div>
   );
 };
+
 Cell.propTypes = {
   onClick: PropTypes.func.isRequired,
   isShip: PropTypes.bool.isRequired,
+  isComputerShot: PropTypes.bool.isRequired,
+  isPlayerShot: PropTypes.bool.isRequired,
+  isSunk: PropTypes.bool.isRequired,
 };
 
 export default Cell;

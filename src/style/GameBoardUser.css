@@ -1,30 +1,57 @@
+/* gameboarduser.css */
+
+/* Contenedor del tablero del usuario */
 .game-container {
-  /* Contenedor del tablero del usuario */
   width: 400px;
   height: 400px;
   display: grid;
   grid-template-columns: repeat(10, 40px);
   grid-template-rows: repeat(10, 40px);
-  margin-left: 80px;
+  justify-content: center; /* Centrar horizontalmente */
+  margin-left: auto; /* Ajustar margen izquierdo */
+  margin-right: auto; /* Ajustar margen derecho */
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.game-container .cell {
-  /* Celda en el tablero del usuario */
+/* Celda en el tablero del usuario */
+.cell {
   width: 40px;
   height: 40px;
-  border: 1px solid #000000;
+  border: 1px solid #020031;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dcdcdc;
+  background-color: #030e9f;
 }
 
-
-
-.game-container .player-shot {
-  /* Cambia el color de las celdas con disparos del jugador en el tablero del usuario */
-  background-color: aquamarine; /* Cambia el color que desees */
+/* Cambia el color de los barcos en el tablero del usuario */
+.cell.ship {
+  background-color: rgb(255, 194, 12); /* Cambia el color que desees */
 }
+
+/* Cambia el color de las celdas con disparos de la computadora en el tablero del usuario */
+.cell.computer-shot {
+  background-color: rgb(29, 27, 27); /* Cambia el color que desees */
+}
+
+/* Cambia el color de las celdas con barcos hundidos en el tablero del usuario */
+.cell.sunk {
+  background-color: rgb(209, 26, 26) ;/* Cambia el color que desees */
+  position: relative;
+}
+.cell.sunk::after {
+  content: 'X';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: rgb(0, 0, 0); /* Cambia el color de la "X" */
+}
+

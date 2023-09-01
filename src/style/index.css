@@ -1,10 +1,31 @@
 body{
-    background-color: rgb(231, 240, 255);
-}
-h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    background-color: rgb(40, 39, 39);
 }
 
+.game-over-message {
+    font-size: 24px;
+    color: white; /* Cambia el color de las letras */
+    background-color: #ff5733; /* Cambia el color de fondo */
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .go-message {
+    font-size: 36px;
+    color: rgb(255, 208, 1); /* Puedes cambiar el color a tu preferencia */
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .game-over-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .game-over-message {
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }

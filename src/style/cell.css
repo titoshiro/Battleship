@@ -1,5 +1,4 @@
 .cell {
-  /* Estilos para la celda en general */
   width: 40px;
   height: 40px;
   border: 1px solid #000000;
@@ -11,12 +10,18 @@
 }
 
 .ship {
-  /* Estilos para la celda con un barco */
-  background-color: blue;
+  background-color: blue; /* Color para las celdas con barcos */
+}
+
+.computer-shot {
+  background-color: yellow; /* Color para las celdas con disparos de la computadora */
+}
+
+.player-shot {
+  background-color: aquamarine; /* Color para las celdas con disparos del jugador */
 }
 
 .sunk {
-  /* Estilos para la celda con un barco hundido */
-  background-color: rgb(212, 60, 60);
+  background-color: rgb(212, 60, 60); /* Cambia el color de fondo para las celdas con barcos hundidos */
   color: #fefefe;
 }

@@ -1,12 +1,16 @@
+
+import titulo from "./imagenes/images.jpeg";
+import "../style/navbar.css"
+
 const Navbar = () => {
   return (
-    <>
-<nav className="navbar bg-body-tertiary">
-  <div className="container-fluid">
-    <span className="navbar-brand mb-0 h1">Navbar</span>
-  </div>
-</nav>
-    </>
+    <nav className=" nav">
+      <div className="container-fluid">
+        <div className="center-image">
+          <img src={titulo} alt="" />
+        </div>
+      </div>
+    </nav>
   );
 };
 
